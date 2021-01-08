@@ -15,3 +15,6 @@
 |     okd4-compute-2     |  Fedora CoreOS 33      		|  Worker          |    4   |   16  |    120    |192.168.1.205 |
 |     okd4-services      |  CentOS 8.3.2011                     |  DNS/LB/Web/NFS  |    4   |    4  |    100    |192.168.1.210 |
 |     okd4-pfsence       |  FreeBSD (pfsense 2.4.5-RELEASE-p1)  |  GW/Router/DHCP  |    1   |    1  |    8      |192.168.1.1   |
+
+# Topology
+![](images/topology.png?raw=true)
