@@ -5,13 +5,13 @@
   
 # Virtual Environment:
 
-|  Name                  |  Type  |  OS  |  vCPU  |  RAM  |  Storage  |  IP Address  |
-|------------------------|--------|------|--------|-------|-----------|--------------|
-|     okd4-bootstrap     |        |      |        |       |           |              |
-|  okd4-control-plane-1  |        |      |        |       |           |              |
-|  okd4-control-plane-2  |        |      |        |       |           |              |
-|  okd4-control-plane-3  |        |      |        |       |           |              |
-|     okd4-compute-1     |        |      |        |       |           |              |
-|     okd4-compute-2     |        |      |        |       |           |              |
-|     okd4-services      |        |      |        |       |           |              |
-|     okd4-pfsence       |        |      |        |       |           |              |
+|  Name                  |  OS                                  |       Type       |  vCPU  |  RAM  |  Storage  |  IP Address  |
+|------------------------|--------------------------------------|------------------|--------|-------|-----------|--------------|
+|     okd4-bootstrap     |  Fedora CoreOS 33  			|  Boostrap        |    4   |   16  |    120    |192.168.1.200 |
+|  okd4-control-plane-1  |  Fedora CoreOS 33  			|  Master          |    4   |   16  |    120    |192.168.1.201 |
+|  okd4-control-plane-2  |  Fedora CoreOS 33  			|  Master          |    4   |   16  |    120    |192.168.1.202 |
+|  okd4-control-plane-3  |  Fedora CoreOS 33  			|  Master          |    4   |   16  |    120    |192.168.1.203 |
+|     okd4-compute-1     |  Fedora CoreOS 33  			|  Worker          |    4   |   16  |    120    |192.168.1.204 |
+|     okd4-compute-2     |  Fedora CoreOS 33      		|  Worker          |    4   |   16  |    120    |192.168.1.205 |
+|     okd4-services      |  CentOS 8.3.2011                     |  DNS/LB/Web/NFS  |    4   |    4  |    100    |192.168.1.210 |
+|     okd4-pfsence       |  FreeBSD (pfsense 2.4.5-RELEASE-p1)  |  GW/Router/DHCP  |    1   |    1  |    8      |192.168.1.1   |
