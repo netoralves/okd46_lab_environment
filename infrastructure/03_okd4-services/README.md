@@ -40,6 +40,8 @@ Create your root password
 
 ![](../../images/centos_final2.png?raw=true)
 
+![](../../images/hostnamectl.png?raw=true)
+
 ## bind(DNS)
 	sudo dnf -y install bind bind-utils
 
