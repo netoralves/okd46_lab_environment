@@ -28,3 +28,23 @@ user: admin
 passwd: pfsense
 
 ![](../../images/web_console_pfsense.png?raw=true)
+
+![](../../images/accept2.png?raw=true)
+
+![](../../images/close.png?raw=true)
+
+Go to Diagnostic -> Backup & Restore
+
+![](../../images/diagnostic_restore.png?raw=true)
+
+Path to restore:
+
+![](../../images/path_to_restore.png?raw=true)
+
+Click on Restore Configuration and confirm:
+
+![](../../images/restore_configuration.png?raw=true)
+
+Waiting on reboot:
+
+![](../../images/reboot2.png?raw=true)
