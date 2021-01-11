@@ -40,6 +40,7 @@ Create your root password
 
 ![](../../images/centos_final2.png?raw=true)
 
+I'm sorry, i forgot to change hostname to installation...
 ![](../../images/hostnamectl.png?raw=true)
 
 ## bind(DNS)
