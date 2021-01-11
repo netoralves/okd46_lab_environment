@@ -24,4 +24,4 @@ Wizard Installation:
 
 ![](../../images/pfsense_final.png?raw=true)
 
-
+![](../../images/web_console_pfsense.png?raw=true)
