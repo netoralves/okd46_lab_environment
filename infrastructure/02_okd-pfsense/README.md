@@ -20,12 +20,10 @@ Wizard Installation:
 
 ![](../../images/reboot.png?raw=true)
 
-![](../../images/VLANs_yes.png?raw=true)
-
 ![](../../images/WAN.png?raw=true)
 
-![](../../images/LAN.png?raw=true)
-
-![](../../images/Confirm_config_yes.png?raw=true)
+![](../../images/WAN_01.png?raw=true)
 
 ![](../../images/pfsense_final.png?raw=true)
+
+
