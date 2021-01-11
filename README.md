@@ -1,7 +1,7 @@
 # OKD4.6 Cluster Using KVM(PROXMOX)
 
 # Physical Environment:
-  Is used a server with 9 physical CPU and 80GB memory and 1TB disk, with Proxmox Virtual Environment 6.3-3 installed
+  Is used a server with 8 physical CPU and 80GB memory and 1TB pool storage (150GB for local-vm and 850GB for vms pool disks), with Proxmox Virtual Environment 6.3-3 installed
   
 # Virtual Environment:
 
