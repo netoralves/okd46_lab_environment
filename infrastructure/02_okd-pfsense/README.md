@@ -49,6 +49,6 @@ Waiting on reboot:
 
 ![](../../images/reboot2.png?raw=true)
 
-Environmente is:
+Environment is:
 
 ![](../../images/pfsense_final2.png?raw=true)
