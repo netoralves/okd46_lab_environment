@@ -28,24 +28,17 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 # Configure pfSense
 
-![02_okd_pfsense](../02_okd-pfsense/)
+![02_okd4_pfsense](../02_okd4-pfsense/)
 
 # Configure okd4-bootstrap
 
-# Configure okd4-control-plane
+![03_okd4_bootstrap](../02_okd4-bootstrape/)
 
-## okd4-control-plane1
+# Configure okd4-controle-plane
 
-## okd4-control-plane2
+![04_okd4_compute](../04_okd4-control-plane/)
 
-## okd4-control-plane3
-
-# Configure okd4-compute
-
-## okd4-compute-1
-
-## okd4-compute-2
-
+# Configure
 
 # Infrastructure
 
