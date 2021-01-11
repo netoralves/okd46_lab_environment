@@ -4,6 +4,37 @@ Config directory to okd4-services.
 
 Requisites:
 	Install CentOS 8.3 with Server with GUI > Guest Agents.
+## Installation
+
+![](../../images/boot_centos.png?raw=true)
+
+![](../../images/boot_centos2.png?raw=true)
+
+![](../../images/network_setup.png?raw=true)
+
+![](../../images/enable_ens18.png?raw=true)
+
+![](../../images/enable_ens19.png?raw=true)
+
+![](../../images/mirror_repo.png?raw=true)
+
+![](../../images/Guest_agents.png?raw=true)
+
+![](../../images/centos_storage.png?raw=true)
+
+![](../../images/centos_lvm.png?raw=true)
+
+services/services
+
+![](../../images/services.png?raw=true)
+
+Create your root password
+
+![](../../images/root.png?raw=true)
+
+![](../../images/begin_installation.png?raw=true)
+
+![](../../images/installation.png?raw=true)
 
 ## bind(DNS)
 	sudo dnf -y install bind bind-utils
