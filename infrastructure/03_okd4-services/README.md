@@ -44,6 +44,10 @@ I'm sorry, I forgot to change hostname to installation...
 
 ![](../../images/hostnamectl.png?raw=true)
 
+Now, LOGOUT and logins with services user(password is services)
+
+![](../../images/services02.png?raw=true)
+
 ## bind(DNS)
 	sudo dnf -y install bind bind-utils
 
