@@ -1,31 +1,14 @@
-# okd4-services
+# okd4-bootstrap
 
-Config directory to okd4-services.
+okd4-bootstrap directory VM
 
-Requisites:
-	Install CentOS 8.3 with Server with GUI > Guest Agents.
+## Starting the bootstrap node:
 
-## bind(DNS)
-	sudo dnf -y install bind bind-utils
+### Power on the odk4-bootstrap VM. Press the TAB key to edit the kernel boot options and add the following:
 
-### Copy the named config files and zones:
+	coreos.inst.install_dev=/dev/sda
+	coreos.inst.image_url=http://192.168.1.210:8080/okd4/fcos.raw.xz
+	coreos.inst.ignition_url=http://192.168.1.210:8080/okd4/bootstrap.ign
 
-	sudo cp .bind/named.conf /etc/named.conf
-	sudo cp .bind/named.conf.local /etc/named/
-	sudo mkdir /etc/named/zones
-	sudo cp .bind/db* /etc/named/zones
+![](../../images/okd4-bootstrap.png?raw=true)
 
-### Enable and start named:
-
-	sudo systemctl enable named
-	sudo systemctl start named
-	sudo systemctl status named
-
-### Create firewall rules:
-
-	sudo firewall-cmd --permanent --add-port=53/udp
-	sudo firewall-cmd --reload
-
-### Change the DNS on the okd4-service NIC that is attached to the VM Network (not OKD) to 127.0.0.1:
-
-![](../../images/DNS.png?raw=true)
