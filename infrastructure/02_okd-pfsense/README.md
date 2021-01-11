@@ -52,3 +52,7 @@ Waiting on reboot:
 Environment is:
 
 ![](../../images/pfsense_final2.png?raw=true)
+
+Complete:
+
+![](../../images/pfsense_final3.png?raw=true)
