@@ -24,4 +24,7 @@ Wizard Installation:
 
 ![](../../images/pfsense_final.png?raw=true)
 
+user: admin
+passwd: pfsense
+
 ![](../../images/web_console_pfsense.png?raw=true)
