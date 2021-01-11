@@ -22,8 +22,6 @@ Wizard Installation:
 
 ![](../../images/WAN.png?raw=true)
 
-![](../../images/WAN_01.png?raw=true)
-
 ![](../../images/pfsense_final.png?raw=true)
 
 
