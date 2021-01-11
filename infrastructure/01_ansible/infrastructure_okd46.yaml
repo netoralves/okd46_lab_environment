@@ -21,7 +21,7 @@
      ide         : '{"ide2":"local:iso/CentOS-8.3.2011-x86_64-boot.iso,media=cdrom"}'
      net:
        net0: 'virtio,bridge=vmbr0'
-       net1: 'virtio,bridge=vmbr1,tag=10'
+       net1: 'virtio=d2:67:55:d7:68:35,bridge=vmbr1,tag=10'
 
   - name: Create okd4-pfsense VM
     proxmox_kvm:
