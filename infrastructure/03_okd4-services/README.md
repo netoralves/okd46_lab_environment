@@ -48,6 +48,13 @@ Now, LOGOUT and logins with services user(password is services)
 
 ![](../../images/services02.png?raw=true)
 
+Install git package
+
+![](../../images/install_git.png?raw=true)
+
+## Clone repo
+	git clone https://github.com/netoralves/okd46_lab_environment.git
+
 ## bind(DNS)
 	sudo dnf -y install bind bind-utils
 
