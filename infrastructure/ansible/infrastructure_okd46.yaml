@@ -1,0 +1,145 @@
+---
+- name: Create Infrastructure for OKD4.6
+  become: yes
+  become_method: sudo
+  become_user: root
+  hosts: localhost
+  tasks:
+  - name: Create okd4-services VM
+    proxmox_kvm:
+     proxmox_default_behavior: no_defaults
+     api_user    : root@pam
+     api_password: root123
+     api_host    : pve-01
+     node        : pve-01
+     name        : okd4-services
+     memory      : 4096
+     sockets     : 1
+     cores       : 4
+     scsihw      : virtio-scsi-pci
+     virtio      : '{"scsi0":"vms:120,ssd=1"}'
+     ide         : '{"ide2":"local:iso/CentOS-8.3.2011-x86_64-boot.iso,media=cdrom"}'
+     net:
+       net0: 'virtio,bridge=vmbr0'
+       net1: 'virtio,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-pfsense VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-pfsense
+      memory      : 1024
+      sockets     : 1
+      cores       : 1
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:8,ssd=1"}'
+      ide         : '{"ide2":"local:iso/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio,bridge=vmbr0'
+        net1: 'virtio,bridge=vmbr1,tag=10'
+        
+  - name: Create okd4-bootstrap VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-bootstrap
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=36:57:55:1d:d2:ea,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-control-plane-1 VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-control-plane-1
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=fe:8c:47:ba:7a:74,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-control-plane-2 VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-control-plane-2
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=e6:83:12:27:39:5c,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-control-plane-3 VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-control-plane-3
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=e2:48:5f:ee:6d:d7,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-compute-1 VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-compute-1
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=4e:1d:e8:1b:14:5d,bridge=vmbr1,tag=10'
+
+  - name: Create okd4-compute-2 VM
+    proxmox_kvm:
+      proxmox_default_behavior: no_defaults
+      api_user    : root@pam
+      api_password: root123
+      api_host    : pve-01
+      node        : pve-01
+      name        : okd4-compute-2
+      memory      : 16384
+      sockets     : 1
+      cores       : 4
+      scsihw      : virtio-scsi-pci
+      virtio      : '{"scsi0":"vms:120,ssd=1"}'
+      ide         : '{"ide2":"local:iso/fedora-coreos-33.20201201.3.0-live.x86_64.iso,media=cdrom"}'
+      net:
+        net0: 'virtio=92:c9:69:d0:ce:4a,bridge=vmbr1,tag=10'
+...
