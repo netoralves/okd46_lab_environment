@@ -32,7 +32,7 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 # Configure okd4-bootstrap
 
-![03_okd4_bootstrap](../02_okd4-bootstrape/)
+![03_okd4_bootstrap](../02_okd4-bootstrap/)
 
 # Configure okd4-controle-plane
 
