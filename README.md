@@ -18,3 +18,11 @@
 
 # Topology
 ![](images/topology.png?raw=true)
+
+# How-to
+
+## Clone repo on hypervisor
+	root@pve-01:~# apt-get install git
+	root@pve-01:~# git clone https://github.com/netoralves/okd46_lab_environment.git
+
+
