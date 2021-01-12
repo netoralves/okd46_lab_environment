@@ -2,8 +2,10 @@
 
 Config directory to okd4-services.
 
-Requisites:
+##Requisites:
+
 	Install CentOS 8.3 with Server with GUI > Guest Agents.
+
 ## Installation
 
 ![](../../images/boot_centos.png?raw=true)
@@ -24,11 +26,11 @@ Requisites:
 
 ![](../../images/centos_lvm.png?raw=true)
 
-services/services
+## services/services
 
 ![](../../images/services.png?raw=true)
 
-Create your root password
+## Create your root password
 
 ![](../../images/root.png?raw=true)
 
@@ -40,15 +42,15 @@ Create your root password
 
 ![](../../images/centos_final2.png?raw=true)
 
-I'm sorry, I forgot to change hostname to installation...
+## I'm sorry, I forgot to change hostname to installation...
 
 ![](../../images/hostnamectl.png?raw=true)
 
-Now, LOGOUT and logins with services user(password is services)
+## Now, LOGOUT and logins with services user(password is services)
 
 ![](../../images/services02.png?raw=true)
 
-Install git package
+## Install git package
 
 ![](../../images/install_git.png?raw=true)
 
