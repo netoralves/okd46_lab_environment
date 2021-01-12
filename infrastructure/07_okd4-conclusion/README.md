@@ -101,6 +101,8 @@ Obs.: Execute more than one time.
 	oc create -f okd46_lab_environment/infrastructure/07_okd4-conclusion/registry_pv.yaml
 	oc get pv
 
+![](../../images/pv.png?raw=true)
+
 ### Edit the image-registry operator:
 
 	oc edit configs.imageregistry.operator.openshift.io
