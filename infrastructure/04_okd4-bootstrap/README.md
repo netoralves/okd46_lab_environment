@@ -12,3 +12,31 @@ okd4-bootstrap directory VM
 
 ![](../../images/okd4-bootstrap.png?raw=true)
 
+### Waiting conclude download
+
+### Before boot, follow logs on bootstrap VM
+
+	ssh core@192.168.1.200
+	journalctl -b -f -u release-image.service -u bootkube.service
+
+## bug fix
+
+### After reboot, verify symlink on resolv.conf
+
+![](../../images/symlink.png?raw=true)
+
+### If this happen is because some permission on SELINUX is don't workes corrrectly (If somewhere know how fix it please let me know).
+
+![](../../images/systemd-resolved.png?raw=true)
+
+### For a while disable systemd-resolved
+
+	sudo systemctl stop systemd-resolved
+	sudo systemctl disable systemd-resolved
+
+### Remove remove symlink and restart NetworkManager
+
+	sudo rm -f /etc/resolv.conf
+	sudo systemctl restart NetworkManager
+
+![](../../images/resolvconf.png?raw=true)
