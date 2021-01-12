@@ -125,3 +125,23 @@ Obs.: Execute more than one time.
 	registry-pv   100Gi      RWX            Retain           Bound    openshift-image-registry/image-registry-storage                           9m34s
 	[services@okd4-services ~]$ du -sh /var/nfsshare/registry
 	0	/var/nfsshare/registry
+
+## HTPasswd Setup:
+
+### The easiest way to set up a local user is with htpasswd.
+
+	cd
+	cd okd46_lab_environment/infrastructure/07_okd4-conclusion
+	htpasswd -c -B -b users.htpasswd admin adminpassword
+
+### Create a secret in the openshift-config project using the users.htpasswd file you generated:
+
+	oc create secret generic htpass-secret --from-file=htpasswd=users.htpasswd -n openshift-config
+
+### Add the identity provider
+
+	oc apply -f htpasswd_provider.yaml
+
+### Logout of the OpenShift Console. Then select htpasswd_provider and login with testuser and testpassword credentials.
+
+
