@@ -87,7 +87,11 @@ Install git package
 ### Test DNS on the okd4-services.
 
 	dig okd.local
-	dig –x 192.168.1.210
+	dig -x 192.168.1.210
+
+![](../../images/domain?raw=true)
+
+![](../../images/dnsresolv?raw=true)
 
 ## Install HAProxy:
 
