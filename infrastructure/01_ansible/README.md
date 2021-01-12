@@ -54,6 +54,11 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 ![06_okd4_compute](../06_okd4-compute/)
 
-# Infrastructure
+# Final Infrastructure
 
 ![](../../images/proxmox.png?raw=true)
+
+# Configure okd4-conclusion
+
+
+![07_okd4_conclusion](../07_okd4-conclusion/)
