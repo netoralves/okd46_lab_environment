@@ -14,6 +14,8 @@ okd4-bootstrap directory VM
 
 ### Waiting conclude download
 
+![](../../images/okd4-bootstrap-download.png?raw=true)
+
 ### Before boot, follow logs on bootstrap VM
 
 	ssh core@192.168.1.200
