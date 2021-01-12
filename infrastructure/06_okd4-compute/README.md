@@ -16,6 +16,10 @@ okd4-compute directory VM
 
 ![](../../images/okd4-compute-download.png?raw=true)
 
+### It is usual for the worker nodes to display the following until the bootstrap process complete:
+
+![](../../images/internal-server-error.png?raw=true)
+
 ## bug fix
 
 Make the same process explane ![here](https://github.com/netoralves/okd46_lab_environment/tree/main/infrastructure/04_okd4-bootstrap#bug-fix)
