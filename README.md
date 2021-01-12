@@ -31,4 +31,4 @@
 
 ### OKD 4.6
 
-![](images/dashboard.png?raw=true)
+![](images/dashboard.jpg?raw=true)
