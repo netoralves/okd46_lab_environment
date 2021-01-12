@@ -114,5 +114,7 @@ Obs.: Execute more than one time.
 	  pvc:
       	    claim:
 
+![](../../images/edit_registry.png?raw=true)
 
+![](../../images/save_registry.png?raw=true)
 
