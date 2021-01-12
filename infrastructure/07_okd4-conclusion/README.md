@@ -142,6 +142,15 @@ Obs.: Execute more than one time.
 
 	oc apply -f htpasswd_provider.yaml
 
-### Logout of the OpenShift Console. Then select htpasswd_provider and login with testuser and testpassword credentials.
+### Follow this commands:
 
+![](../../images/htpasswd.png?raw=true)
+
+### Logout of the OpenShift Console. Then select htpasswd_provider and login with admin and adminpassword credentials:
+
+![](../../images/htpasswd2.png?raw=true)
+
+![](../../images/htpasswd_login.png?raw=true)
+
+![](../../images/dashboard_clear.png?raw=true)
 
