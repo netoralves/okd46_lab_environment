@@ -167,7 +167,9 @@ In the install-config.yaml, you can either use a pull-secret from RedHat or the 
 	mkdir install_dir
 	cp okd46_lab_environment/infrastructure/03_okd4-services/install-config.yaml ./install_dir/
 
-### Edit the install-config.yaml in the install_dir, insert your [pull secret] (https://cloud.redhat.com/) and ssh key, and backup the install-config.yaml as it will be deleted in the next step:
+### Edit the install-config.yaml in the install_dir, insert your [pull secret] (https://cloud.redhat.com/) [Clusters > Create > OpenShift Container Platform > Bare Metal > Installer-provisioned infrastructure] and ssh key, and backup the install-config.yaml as it will be deleted in the next step:
+
+![](../../images/rhcloud.png?raw=true)
 
 	vim ./install_dir/install-config.yaml
 	cp ./install_dir/install-config.yaml ./install_dir/install-config.yaml.bak
