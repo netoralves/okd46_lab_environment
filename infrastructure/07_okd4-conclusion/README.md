@@ -118,3 +118,10 @@ Obs.: Execute more than one time.
 
 ![](../../images/save_registry.png?raw=true)
 
+### Verify pvs
+
+	[services@okd4-services ~]$ oc get pv
+	NAME          CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                             STORAGECLASS   REASON   AGE
+	registry-pv   100Gi      RWX            Retain           Bound    openshift-image-registry/image-registry-storage                           9m34s
+	[services@okd4-services ~]$ du -sh /var/nfsshare/registry
+	0	/var/nfsshare/registry
