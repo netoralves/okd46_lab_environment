@@ -60,7 +60,8 @@ Install git package
 
 ### Copy the named config files and zones:
 
-	sudo cp .bind/named.conf /etc/named.conf
+	sudo cp okd46_lab_environment/infrastructure/03_okd4-services/bind/named.conf /etc/named.conf
+	sudo cp okd46_lab_environment/infrastructure/03_okd4-services/bind/named.conf /etc/named.conf
 	sudo cp .bind/named.conf.local /etc/named/
 	sudo mkdir /etc/named/zones
 	sudo cp .bind/db* /etc/named/zones

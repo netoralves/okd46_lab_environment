@@ -24,9 +24,17 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 # Result
 
+## After
+
 ![](../../images/proxmox_clean.png?raw=true)
 
+## Before
+
+![](../../images/proxmox_withVMs.png?raw=true)
+
 # Configure pfSense
+
+## Boot okd4-pfsense VM
 
 ![02_okd4_pfsense](../02_okd4-pfsense/)
 
