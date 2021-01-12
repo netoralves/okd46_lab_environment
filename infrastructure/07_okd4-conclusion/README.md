@@ -154,3 +154,10 @@ Obs.: Execute more than one time.
 
 ![](../../images/dashboard_clear.png?raw=true)
 
+### Give yourself cluster-admin access, and the projects should immediately populate:
+
+	oc adm policy add-cluster-role-to-user cluster-admin admin
+
+### Your user should now have cluster-admin level access:
+
+![](../../images/dashboard_admin.png?raw=true)
