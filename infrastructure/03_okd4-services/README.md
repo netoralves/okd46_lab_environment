@@ -165,7 +165,7 @@ In the install-config.yaml, you can either use a pull-secret from RedHat or the 
 
 	cd
 	mkdir install_dir
-	cp okd46_lab_environment/infrastructure/okd4-bootstrap/install-config.yaml ./install_dir
+	cp okd46_lab_environment/infrastructure/03_okd4-services/install-config.yaml ./install_dir/
 
 ### Edit the install-config.yaml in the install_dir, insert your [pull secret] (https://cloud.redhat.com/) and ssh key, and backup the install-config.yaml as it will be deleted in the next step:
 
