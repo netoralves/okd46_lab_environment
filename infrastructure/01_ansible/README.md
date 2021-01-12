@@ -24,11 +24,11 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 # Result
 
-## After
+## Before execution playbook
 
 ![](../../images/proxmox_clean.png?raw=true)
 
-## Before
+## After execution playbook
 
 ![](../../images/proxmox_withVMs.png?raw=true)
 
