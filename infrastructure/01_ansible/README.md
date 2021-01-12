@@ -50,7 +50,7 @@ Playbook to provisioned infrastructure on PROXMOX 6.3-3.
 
 ![05_okd4_control-plane](../05_okd4-control-plane/)
 
-# Configure okd4-contro
+# Configure okd4-compute
 
 ![06_okd4_compute](../06_okd4-compute/)
 
