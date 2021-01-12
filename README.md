@@ -25,4 +25,10 @@
 	root@pve-01:~# apt-get install git
 	root@pve-01:~# git clone https://github.com/netoralves/okd46_lab_environment.git
 
+## Follow the summary on ansible directory
 
+![01_ansible](infrastructure/01_ansible/?raw=true)
+
+### OKD 4.6
+
+![](images/dashboard.png?raw=true)
