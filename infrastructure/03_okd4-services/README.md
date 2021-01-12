@@ -99,8 +99,7 @@ Install git package
 
 
 ### Copy haproxy config from the git directory:
-
-	sudo cp ./haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg
+	sudo cp okd46_lab_environment/infrastructure/03_okd4-services/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg
 
 ### Start, enable, and verify HA Proxy service:
 
