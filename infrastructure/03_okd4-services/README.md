@@ -26,7 +26,7 @@ Config directory to okd4-services.
 
 ![](../../images/centos_lvm.png?raw=true)
 
-## services/services
+	services/services
 
 ![](../../images/services.png?raw=true)
 
