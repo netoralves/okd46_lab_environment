@@ -72,7 +72,7 @@ Obs.: Execute more than one time.
 
 ## Persistent Storage
 
-## On okd4-services VM
+### On okd4-services VM
 
 	sudo dnf install -y nfs-utils
 	sudo systemctl enable nfs-server rpcbind
@@ -81,11 +81,11 @@ Obs.: Execute more than one time.
 	sudo chmod -R 777 /var/nfsshare
 	sudo chown -R nobody:nobody /var/nfsshare
 
-## Create an NFS Export
+### Create an NFS Export
 
 	echo '/var/nfsshare 192.168.1.0/24(rw,sync,no_root_squash,no_all_squash,no_wdelay)' | sudo tee /etc/exports
 
-## Restart the nfs-server service and add firewall rules:
+### Restart the nfs-server service and add firewall rules:
 
 	sudo setsebool -P nfs_export_all_rw 1
 	sudo systemctl restart nfs-server
