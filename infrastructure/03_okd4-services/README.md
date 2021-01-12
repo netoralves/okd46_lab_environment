@@ -89,9 +89,9 @@ Install git package
 	dig okd.local
 	dig -x 192.168.1.210
 
-![](../../images/domain?raw=true)
+![](../../images/domain.png?raw=true)
 
-![](../../images/dnsresolv?raw=true)
+![](../../images/dnsresolv.png?raw=true)
 
 ## Install HAProxy:
 
