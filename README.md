@@ -29,6 +29,6 @@
 
 ![01_ansible](infrastructure/01_ansible/?raw=true)
 
-### OKD 4.6
+## OKD 4.6
 
 ![](images/dashboard.jpg?raw=true)
