@@ -18,7 +18,7 @@ okd4-compute directory VM
 
 ### It is usual for the worker nodes to display the following until the bootstrap process complete:
 
-![](../../images/internal-server-error.png?raw=true)
+![](../../images/internal_server_error.png?raw=true)
 
 ## bug fix
 
