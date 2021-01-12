@@ -64,8 +64,53 @@ Obs.: Execute more than one time.
 
 ![](../../images/webconsole-okd4.png?raw=true)
 
-# Copy password on kubeadmin user:
+## Copy password on kubeadmin user:
 
 	cat install_dir/auth/kubeadmin-password
 
 ![](../../images/webconsole.png?raw=true)
+
+## Persistent Storage
+
+## On okd4-services VM
+
+	sudo dnf install -y nfs-utils
+	sudo systemctl enable nfs-server rpcbind
+	sudo systemctl start nfs-server rpcbind
+	sudo mkdir -p /var/nfsshare/registry
+	sudo chmod -R 777 /var/nfsshare
+	sudo chown -R nobody:nobody /var/nfsshare
+
+## Create an NFS Export
+
+	echo '/var/nfsshare 192.168.1.0/24(rw,sync,no_root_squash,no_all_squash,no_wdelay)' | sudo tee /etc/exports
+
+## Restart the nfs-server service and add firewall rules:
+
+	sudo setsebool -P nfs_export_all_rw 1
+	sudo systemctl restart nfs-server
+	sudo firewall-cmd --permanent --zone=public --add-service mountd
+	sudo firewall-cmd --permanent --zone=public --add-service rpc-bind
+	sudo firewall-cmd --permanent --zone=public --add-service nfs
+	sudo firewall-cmd --reload
+
+## Registry configuration:
+
+### Create a persistent volume on the NFS share. Use the registry_py.yaml in okd4_files folder from the git repo:
+
+	oc create -f okd46_lab_environment/infrastructure/07_okd4-conclusion/registry_pv.yaml
+	oc get pv
+
+### Edit the image-registry operator:
+
+	oc edit configs.imageregistry.operator.openshift.io
+
+### Change the managementState: from Removed to Managed. Under storage: add the pvc: and claim: blank to attach the PV and save your changes automatically:
+
+	managementState: Managed
+	storage:
+	  pvc:
+      	    claim:
+
+
+
