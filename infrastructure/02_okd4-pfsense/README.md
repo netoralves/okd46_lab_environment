@@ -1,10 +1,10 @@
 # pfSense
 
-Start okd4-pfsense
+## Start okd4-pfsense
 
 ![](../../images/proxmox_pfsense.png?raw=true)
 
-Wizard Installation:
+## Wizard Installation:
 
 ![](../../images/accept.png?raw=true)
 
@@ -24,8 +24,8 @@ Wizard Installation:
 
 ![](../../images/pfsense_final.png?raw=true)
 
-user: admin
-passwd: pfsense
+	user: admin
+	passwd: pfsense
 
 ![](../../images/web_console_pfsense.png?raw=true)
 
@@ -33,26 +33,22 @@ passwd: pfsense
 
 ![](../../images/close.png?raw=true)
 
-Go to Diagnostic -> Backup & Restore
+## Go to Diagnostic -> Backup & Restore
 
 ![](../../images/diagnostic_restore.png?raw=true)
 
-Path to restore:
+## Path to restore:
 
 ![](../../images/path_to_restore.png?raw=true)
 
-Click on Restore Configuration and confirm:
+## Click on Restore Configuration and confirm:
 
 ![](../../images/restore_configuration.png?raw=true)
 
-Waiting on reboot:
+## Waiting on reboot:
 
 ![](../../images/reboot2.png?raw=true)
 
-Environment is:
+## Environment is:
 
 ![](../../images/pfsense_final2.png?raw=true)
-
-Complete:
-
-![](../../images/pfsense_final3.png?raw=true)
