@@ -58,5 +58,14 @@ Obs.: Execute more than one time.
 
 ![](../../images/cluster_operators.png?raw=true)
 
+## Access Web Console
 
+### Open your web browser to https://console-openshift-console.apps.lab.okd.local/ (in my case, include this url in my hosts file on workstation connected on "WAN" network) and login as kubeadmin with the password from above:
 
+![](../../images/webconsole-okd4.png?raw=true)
+
+# Copy password on kubeadmin user:
+
+	cat install_dir/auth/kubeadmin-password
+
+![](../../images/webconsole.png?raw=true)
