@@ -32,3 +32,8 @@
 ## OKD 4.6
 
 ![](images/dashboard.png?raw=true)
+
+## PROXMOX VE 6.3-3
+
+![](images/dashboard_pve.png?raw=true)
+
