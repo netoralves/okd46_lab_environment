@@ -27,8 +27,7 @@ okd4-bootstrap directory VM
 
 ![](../../images/symlink.png?raw=true)
 
-### If this happen is because some permission on SELINUX is don't workes corrrectly (If somewhere know how fix it please let me know).
-
+### If this happen is because some permission on SELINUX is don't work correctly (If someone know how fix it keeping systemd-resolved execution, please let me know).
 ![](../../images/systemd-resolved.png?raw=true)
 
 ### For a while disable systemd-resolved
